@@ -31,7 +31,7 @@ namespace Eco.Mods.TechTree
         {
             var product = new Recipe(
                 "DirtDecay",
-                Localizer.DoStr("DirtDecay"),
+                Localizer.DoStr("Dirt Decay"),
                 new IngredientElement[]
                 {
                new IngredientElement(typeof(DirtItem), 20),   
@@ -40,11 +40,11 @@ namespace Eco.Mods.TechTree
                new CraftingElement<SandItem>(9),
                new CraftingElement<CompostFertilizerItem>(2)			   
             );
-            this.Initialize(Localizer.DoStr("DirtDecay"), typeof(DirtDecayRecipe));
+            this.Initialize(Localizer.DoStr("Dirt Decay"), typeof(DirtDecayRecipe));
             this.Recipes = new List<Recipe> { product };
             this.LaborInCalories = CreateLaborInCaloriesValue(1000); 
             this.CraftMinutes = CreateCraftTimeValue(10f);
-            this.Initialize(Localizer.DoStr("DirtDecay"), typeof(DirtDecayRecipe));
+            this.Initialize(Localizer.DoStr("Dirt Decay"), typeof(DirtDecayRecipe));
             CraftingComponent.AddRecipe(typeof(RockerBoxObject), this);
         }
     }
